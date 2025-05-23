@@ -1,0 +1,56 @@
+* {
+    all: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.popup {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    border: 2px white solid;
+    padding: 8px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border-radius: 6px;
+    z-index: 1000;
+    font-size: 20px;
+    min-height: 250px;
+    min-width: 450px;
+    max-height: 250px;
+    max-width: 450px;
+    overflow-y: scroll;
+}
+
+.sentence {
+    font-style: italic;
+    color: rgba(255,255,255,0.6)
+}
+
+
+.word {
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+    text-wrap-mode: wrap;
+    border-bottom: none;
+}
+
+.type {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.definitions {
+    font-size: 14px;
+}
+
+.synonym {
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.visible {
+    display: none;
+}

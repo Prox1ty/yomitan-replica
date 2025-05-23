@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Text Extractor on Key Press",
+    "version": "1.0",
+    "description": "Extract text content when 'Ctrl' key is pressed.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts" : [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["contentScript.js"],
+            "css": ["styles.css"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["dict/data.noun", "dict/data.verb", "dict/data.adj", "dict/data.adv", "english.json"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
